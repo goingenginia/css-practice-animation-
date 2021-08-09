@@ -1,0 +1,60 @@
+.dots {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dots div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  -webkit-animation: roader 1s infinite;
+          animation: roader 1s infinite;
+}
+
+.dots div.dot1 {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.dots div.dot2 {
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+
+@-webkit-keyframes roader {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes roader {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
